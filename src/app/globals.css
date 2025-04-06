@@ -1,26 +1,44 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary-dark: #00A87B;
+  --primary-light: #00C28C;
+  --white: #FFFFFF;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  body {
+    @apply antialiased text-gray-800;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold;
+  }
+
+  button {
+    @apply transition-all duration-200;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .btn-primary {
+    @apply bg-[#00A87B] text-white px-4 py-2 rounded-md hover:bg-[#00C28C] transition-colors focus:outline-none focus:ring-2 focus:ring-[#00C28C] focus:ring-offset-2 disabled:opacity-50;
+  }
+
+  .form-input {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#00C28C] focus:border-[#00C28C];
+  }
+
+  .service-tag {
+    @apply px-2 py-1 text-xs font-medium rounded-full bg-[#00C28C] text-[#ffffff];
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden;
+  }
 }
