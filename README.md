@@ -73,15 +73,16 @@ npm run dev
 ## Project Structure
 
 ```
-brighte-eats-frontend/
-├── app/
-│   ├── components/         # Reusable UI components
-│   ├── dashboard/          # Dashboard pages and components
-│   │   └── lead/           # Lead detail pages
-│   ├── lib/                # Utility functions and API clients
-│   └── page.tsx            # Home page with registration form
+brighte-tucker-graphql-ui/
+├── src/
+│     app/
+│     ├── components/       # Reusable UI components
+│     ├── dashboard/        # Dashboard pages and components
+│     │   └── lead/         # Lead detail pages
+│     ├── lib/              # Utility functions and API clients
+│     └── page.tsx          # Home page with registration form
 ├── public/                 # Static assets
-├── .env.local              # Environment variables (create this file)
+├── .env                    # Environment variables (create this file)
 ├── next.config.js          # Next.js configuration
 ├── package.json            # Project dependencies
 ├── tailwind.config.js      # Tailwind CSS configuration
