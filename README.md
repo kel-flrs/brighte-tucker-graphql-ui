@@ -10,6 +10,10 @@ The Brighte Eats Frontend is a modern web application built to capture expressio
 
 **Development Process**: Having invested significant time developing the GraphQL API backend, I expedited the frontend development process by leveraging AI assistance. As a backend-focused full stack developer, frontend development is not my primary area of expertise. Many of the frontend technologies used in this project are ones I'm still in the learning process of mastering. While I can implement and modify frontend features, making substantial UI changes during a live coding interview would be challenging, though I could certainly accomplish these tasks given appropriate time. 😅
 
+## Security Considerations
+
+**Note on Dashboard Access**: In this demonstration project, the dashboard page is publicly accessible for ease of review and testing. In a real-world production environment, the dashboard would be protected by proper authentication and authorization mechanisms to ensure that only authorized administrative users can access sensitive lead information. Implementation of secure authentication was intentionally omitted from this project scope to focus on core functionality demonstration.
+
 ## UI Sneak Peek
 
 ![brighte-eats-home-page](https://github.com/user-attachments/assets/edcea198-250a-444c-b40c-8e7df43a2497)
